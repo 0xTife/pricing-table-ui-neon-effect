@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    --white: #fff;
+    --background-tarnsparent: rgba(10, 11, 68, 0.4);
+    --bigtext: 20px;
+    --bolder: bolder;
+    --button: 2px solid none;
+    --btn-width: 60px;
+    --btn-radius: 20px;
+    --btn-height: 35px;
+    --green-gradient: linear-gradient(to right, dodgerblue, rgb(85, 255, 198));
+}
+
+body {
+    /*background: url("img/stone_sword_bg_dribbble.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    background: url("img/download.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 85%;
+    height: 900px;
+    border: none;
+    margin: 40px auto;
+    border-radius: 20px;
+    background: var(--background-tarnsparent);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+nav ul:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+nav ul li span {
+    color: tomato;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: var(--white);
+    font-size: var(--bigtext);
+    font-weight: var(--bolder);
+}
+
+nav ul:last-child li {
+    border: var(--button);
+    width: calc(var(--btn-width) * 2);
+    height: var(--btn-height);
+    text-align: center;
+    border-radius: var(--btn-radius);
+    padding: 5px 0 0 0;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.login {
+    background: var(--green-gradient);
+    background: -webkit-linear-gradient(to right, dodgerblue, rgb(85, 255, 198));
+    background: -moz-linear-gradient(to right, dodgerblue, rgb(85, 255, 198));
+    font-size: 18px;
+}
+
+.signup {
+    background: linear-gradient(to right, tomato, orange);
+    font-size: 18px;
+}
+
+section h1 {
+    text-align: center;
+    color: var(--white);
+    font-size: 40px;
+}
+
+.info ul {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+.info ul li {
+    list-style-type: none;
+    color: var(--white);
+    font-family: 'Courier New', Courier, monospace;
+    width: 250px;
+    text-align: center;
+}
+
+.info ul li:first-child {
+    border-right: 2px solid #ddd;
+}
+
+.info ul li h4 {
+    font-size: calc(var(--bigtext) * 3 / 2);
+}
+
+.info ul li strong {
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.info ul li:first-child p {
+    color: rgb(85, 255, 198);
+    font-weight: var(--bolder);
+}
+
+.info ul li:last-child p {
+    color: tomato;
+    font-weight: var(--bolder);
+}
+
+.info ul li:first-child i {
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: var(--green-gradient);
+    margin: 0 20px 0 0;
+    display: inline;
+}
+
+.pricing-table {
+    width: auto;
+    height: 480px;
+    padding: 50px;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-table ul {
+    width: 180px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.price {
+    font-size: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.pricing-table ul li {
+    list-style-type: none;
+    color: var(--white);
+    text-align: center;
+    padding: 50px 0 0 0;
+    border: 2px solid none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.pricing-table ul div h3 {
+    color: var(--white);
+}
+
+.pricing-table ul div i {
+    color: rgb(85, 255, 198);
+    margin: 0 0 0 35px;
+    width: 60px;
+}
+
+.pricing-table ul button {
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid rgb(85, 255, 198);
+    border-radius: 20px;
+    color: #fff;
+    margin: 30px 0 0 30px;
+    font-size: 15px;
+}
+
+.pricing-table ul button:hover {
+    background: linear-gradient(to right, dodgerblue, rgb(85, 255, 198));
+    transition: all 1s ease-in;
+    border: none;
+}
+
+.pricing-table .box2:hover {
+    transition: all 0.5s ease-in;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid rgb(85, 255, 198);
+    opacity: 0.9;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(85, 255, 198);
+}
+
+.pricing-table .box3:hover {
+    transition: all 0.5s ease-in;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid rgb(85, 255, 198);
+    opacity: 0.9;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(85, 255, 198);
+}
+
+.pricing-table .box4:hover {
+    transition: all 0.5s ease-in;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid rgb(85, 255, 198);
+    opacity: 0.9;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(85, 255, 198);
+}
+
+.pricing-table .box5:hover {
+    transition: all 0.5s ease-in;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid rgb(85, 255, 198);
+    opacity: 0.9;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(85, 255, 198);
+}
+
+.pricing-table ul div i {
+    transform: rotate(-45deg);
+}
